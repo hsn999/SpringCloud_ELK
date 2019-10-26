@@ -137,7 +137,9 @@ index的创建方式，"log-%{[source]}-%{+YYYY.MM.dd}"   这里按照应用�
 ## kibana中 Create index pattern
 
 
+![Image text](https://github.com/hsn999/SpringCloud_ELK/blob/master/user_common_service/pic/kibana1.png)
 
+![Image text](https://github.com/hsn999/SpringCloud_ELK/blob/master/user_common_service/pic/kibana2.png)
 
 
 
