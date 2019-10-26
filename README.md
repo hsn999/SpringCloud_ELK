@@ -84,8 +84,8 @@
 
 
 ### 注意下面几个关键点：
-
-        <source>user_common_service</source>   ####  可以配置应用名称，后面按这个名称创建ES的索引，注意是小写
+~~~
+        <source>user_common_service</source>   ####  可以配置应用名称，后面按这个名称创建ES的索引，注意是小写
         
         <sourcePath>node1</sourcePath>        
        
@@ -107,7 +107,7 @@
             
         </additionalField>
 
-
+~~~
 
 ## logstah的配置：
 
