@@ -1,4 +1,4 @@
-#Springboot ELK(logback->redis->logstash->ES)完整记录
+# Springboot ELK(logback->redis->logstash->ES)完整记录
 
 ##项目安装： Redis、logstash、ES、kibana安装请参照官方文档
 
@@ -14,7 +14,7 @@
 
 <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
 ~~~
-##pom.xml引入
+## pom.xml引入
 ~~~
     <dependency>
             <groupId>com.cwbase</groupId>
@@ -83,7 +83,7 @@ logback.xml，此文件放在sources下面
 ~~~
 
 
-###注意下面几个关键点：
+### 注意下面几个关键点：
 
         <source>user_common_service</source>   ####  可以配置应用名称，后面按这个名称创建ES的索引，注意是小写
         <sourcePath>node1</sourcePath>
@@ -99,7 +99,7 @@ logback.xml，此文件放在sources下面
 
 
 
-##logstah的配置：
+## logstah的配置：
 
 ~~~
 input {
@@ -124,7 +124,7 @@ output {
 ~~~
 index的创建方式，"log-%{[source]}-%{+YYYY.MM.dd}"   这里按照应用源及日期创建一个索引，按自己需要定义
 
-kibana中 Create index pattern
+## kibana中 Create index pattern
 
 
 
