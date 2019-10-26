@@ -86,15 +86,25 @@
 ### 注意下面几个关键点：
 
         <source>user_common_service</source>   ####  可以配置应用名称，后面按这个名称创建ES的索引，注意是小写
-        <sourcePath>node1</sourcePath>
+        
+        <sourcePath>node1</sourcePath>        
+       
         <type>Service</type>
+        
         <tags>production</tags>
+        
         <host>127.0.0.1</host>  ###redis的地址
+        
         <port>6379</port>    ###redis的端口
+        
         <key>logstash</key>
+        
         <additionalField>    ###可以自定义属性！！
+        
             <key>teamName</key>
+            
             <value>mobile_app</value>
+            
         </additionalField>
 
 
