@@ -24,7 +24,7 @@
 ~~~
 
 
-logback.xml，此文件放在sources下面
+## logback.xml，此文件放在sources下面
 
 ~~~
 <?xml version="1.0" encoding="UTF-8"?>
@@ -134,8 +134,8 @@ index的创建方式，"log-%{[source]}-%{+YYYY.MM.dd}"   这里按照应用�
 
 
 
-修改elasticsearch的shards
-
+## 修改elasticsearch的shards
+~~~
 curl -XPUT 'http://172.28.161.90:19200/_template/logstash-*' -H 'Content-Type: application/json' -d'{
     "index_patterns" : ["*"],
     "order" : 0,
@@ -143,6 +143,6 @@ curl -XPUT 'http://172.28.161.90:19200/_template/logstash-*' -H 'Content-Type: a
         "number_of_shards" : 5
     }
 }'
-
+~~~
 
 
