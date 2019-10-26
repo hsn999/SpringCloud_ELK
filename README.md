@@ -24,7 +24,7 @@
 ~~~
 
 
-## logback.xml，此文件放在sources下面
+## logback.xml，此文件放在resources下面
 
 ~~~
 <?xml version="1.0" encoding="UTF-8"?>
