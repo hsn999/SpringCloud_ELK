@@ -1,0 +1,6 @@
+server:
+  port: 9900
+
+spring:
+  application:
+    name: user_service
